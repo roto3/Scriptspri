@@ -1,0 +1,8 @@
+read -p "Introduce un valor mayor que 0: " num
+
+while [ $num -lt 1 ]; do
+	read -p "Valor incorrecto dame uno bueno: "
+done
+for i in `seq 0 $num`; do
+	echo "$num"
+done

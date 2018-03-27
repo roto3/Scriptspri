@@ -1,0 +1,13 @@
+read -p "Introduce un valor mayor a 0: " num
+if [ $num -lt 1 ] then
+	while [ $num -lt 1 ]; do
+		read -p "Valor introducido incorrecto, introduce valor correcto: " num
+	done
+fi
+rest=$($num%2)
+
+if [ $rest -gt 0 ]; then
+	echo "es impar"
+else
+	echo "es par"
+fi

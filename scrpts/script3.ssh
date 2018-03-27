@@ -1,0 +1,19 @@
+read -p "Introduce una nota: " nota
+while [ $nota -lt 0] || [ $nota -gt 10]; do
+	read -p "Valor incorrecto, por favor introduzca una nota válida: " nota
+done
+
+if [ $nota -ge 9 ]; then
+	echo "Sobresaliente prim"
+else if [ $nota -ge 7 ]; then
+		echo "Notable, not bad"
+	else if [ $nota -ge 6 ]; then
+			echo "Un bien"
+		else if [ $nota -ge 5 ]; then
+				echo "Aprobado raspadito"
+			else
+				echo "Suspenso, mejor suerte la próxima"
+			fi
+		fi
+	fi
+fi

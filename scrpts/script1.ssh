@@ -1,4 +1,4 @@
-read -p "Intorduce 2 valores" num1 num2
+read -p "Introduce 2 valores" num1 num2
 
 if [ $num1 eq $num2 ]; then
 	echo "los 2 valores son iguales"
