@@ -1,0 +1,16 @@
+read -p "Introduce un valor mayor que 0: " num
+
+while[ $num -le 0 ]; do
+read -p "Introduce un valor válido: "
+done
+$precio=0
+if [$num -gt 200]; then
+	num=$((num-200))
+	precio=$((num\*0'1+40))
+else if [$num -gt 50]; then
+		num=$((num-50))
+		precio=$((num\*0'2+20))
+	else
+		precio=$((num\*0'4))
+	fi
+fi
